@@ -20,7 +20,10 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middlewares globales
-app.use(cors());
+app.use(cors(
+  { origin: 'https://backend-tienda-production-2cd7.up.railway.app/', 
+    credentials: true }
+));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
