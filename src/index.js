@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 3000;
 
 // Middlewares globales
 app.use(cors(
-  { origin: 'https://backend-tienda-production-2cd7.up.railway.app/', 
+  { origin: 'https://frontend-tienda-production.up.railway.app', 
     credentials: true }
 ));
 app.use(express.json());
